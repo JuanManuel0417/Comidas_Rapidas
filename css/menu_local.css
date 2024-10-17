@@ -1,0 +1,61 @@
+.contenedor_cajitas {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 0 50px;
+}
+
+.contenedor_cajitas2 {
+    display: flex;
+    justify-content: center; 
+    gap: 10%;
+    margin-bottom: 10%;
+}
+
+.cajita {
+    background-color: #730a05;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cajita img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close {
+    color: red;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: darkred;
+}

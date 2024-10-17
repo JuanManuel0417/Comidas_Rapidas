@@ -1,0 +1,67 @@
+footer{
+    background-color: #730a05;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.logo-section {
+    width: 40%;
+    text-align: center;
+}
+
+.logo-section img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+.logo-section p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: white;
+}
+
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+}
+
+.horarios, .metodos-pago, .contacto {
+    width: 30%;
+}
+
+.footer_container h2{
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.footer_container h3{
+    color: #f89c1c;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer_container p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: white;
+}
+
+.contacto .social-icons {
+    margin-top: 15px;
+}
+
+.contacto .social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}

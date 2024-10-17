@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/nav_header.css">
+    <link rel="stylesheet" href="css/menu_local.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 
 <body>
@@ -35,32 +38,80 @@
     </div>
 
     <div class="contenedor_cajitas">
-        <div class="cajita">
-            <img src="imagenes/1.png" alt="Cargando Imagen">
+        <div class="cajita" onclick="openModal('menuHamburguesas')">
+            <img src="imagenes/1.png" alt="Menú de Hamburguesas">
         </div>
-
-        <div class="cajita">
-            <img src="imagenes/2.png" alt="Cargando Imagen">
+        <div class="cajita" onclick="openModal('menuPerros')">
+            <img src="imagenes/2.png" alt="Menú de Perros">
         </div>
-
-        <div class="cajita">
-            <img src="imagenes/3.png" alt="Cargando Imagen">
+        <div class="cajita" onclick="openModal('menuChuzos')">
+            <img src="imagenes/3.png" alt="Menú de Chuzos">
         </div>
     </div>
-
+    
     <div class="contenedor_cajitas2">
-        <div class="cajita">
-            <img src="imagenes/4.png" alt="Cargando Imagen">
+        <div class="cajita" onclick="openModal('menuSanduches')">
+            <img src="imagenes/4.png" alt="Menú de Sánduches">
         </div>
-
-        <div class="cajita">
-            <img src="imagenes/5.png" alt="Cargando Imagen">
+        <div class="cajita" onclick="openModal('menuBebidas')">
+            <img src="imagenes/5.png" alt="Menú de Bebidas">
         </div>
     </div>
+    
+    <!-- Modal -->
+    <div id="menuModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="menuInfo"></div>
+        </div>
+    </div>
+    
 
     <footer>
-        
+        <div class="footer_container">
+            <div class="logo-section">
+                <img src="imagenes/logo_redes_sin.png" alt="Logo Donde Rafa">
+                <p>Ya viste nuestro menú ¿Qué quieres pedir hoy? Pide tu domicilio en nuestro WhatsApp</p>
+            </div>
+
+            <div class="info-section">
+                <div class="horarios">
+                    <strong><h2>Horario de atención</h2></strong>
+                    <p>Lunes a jueves de 1:00 p.m a 11:00 p.m</p>
+                    <p>Viernes y sábado de 1:00 p.m a 12:00 a.m</p>
+                    <p>Domingos de 1 p.m a 11 p.m</p>
+                </div>
+
+                <div class="metodos-pago">
+                    <h2>Métodos de pago</h2>
+                    <h3>En nuestro restaurante</h3>
+                    <p>Efectivo</p>
+                    <p>Tarjetas débito y crédito</p>
+                    <p>Nequi / Daviplata</p>
+
+                    <h3>Domicilios</h3>
+                    <p>Efectivo</p>
+                    <p>Tarjeta de débito o crédito</p>
+                    <p>Pagos por plataformas (Pago adelantado)</p>
+                </div>
+
+                <div class="contacto">
+                    <h2>Contáctanos</h2>
+                    <p>Visítanos en Bogotá:</p>
+                    <p>📍 Cra. 105f # 70b - 08, Plazuela de Virrey - Engativá.</p>
+                    <p>📍 Calle 75b # 112A - 03, Villas de Granada - Engativá.</p>
+                    <h3>Domicilios</h3>
+                    <p>📞 317 341 2847</p>
+                    <p>📞 318 468 2076</p>
+                    <div class="social-icons">
+                        <img src="imagenes/facebook.png" alt="Facebook">
+                        <img src="imagenes/instagram.png" alt="Instagram">
+                    </div>
+                </div>
+            </div>
     </footer>
+
+    <script src="js/principal.js"></script>
 </body>
 
 </html>
