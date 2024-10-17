@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    background-color: #e2e2e2;
+    font-size: 20px;
+}
+
+.contenedor img {
+    width: 9%;
+    height: auto;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+nav ul li a:hover{
+    background-color: #d2ceff;
+    border-radius: 3px;
+}
+
+.ubicacion h2 {
+    margin-right: 30px;
+}
+
+.ubicacion h2 {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.ubicacion h2 i {
+    color: red;
+    margin-right: 8px;
+}
+
+.bienvenida {
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.bienvenida img {
+    width: 100%;
+    height: auto;
+    filter: brightness(50%);
+    position: relative;
+    z-index: 1;
+}
+
+.bienvenida h2, .bienvenida button {
+    position: absolute;
+    z-index: 2;
+    color: white;
+}
+
+.bienvenida h2 {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+}
+
+.bienvenida button {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    font-size: 20px;
+    background-color: #730a05;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.contenedor_cajitas {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 0 50px;
+}
+
+.contenedor_cajitas2 {
+    display: flex;
+    justify-content: center; 
+    gap: 10%;
+    margin-bottom: 10%;
+}
+
+.cajita {
+    background-color: #730a05;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cajita img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
