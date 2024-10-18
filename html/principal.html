@@ -5,23 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="stylesheet" href="css/nav_header.css">
-    <link rel="stylesheet" href="css/menu_local.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="../css/nav_header.css">
+    <link rel="stylesheet" href="../css/menu_local.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 
 <body>
     <div class="contenedor">
         <header>
-            <img src="imagenes/logo_rojo.png" alt="Cargando Imagen">
+            <img src="../img/logo_rojo.png" alt="Cargando Imagen">
 
             <nav>
                 <ul type="none">
                     <li><a href="principal.html">Inicio</a></li>
                     <li><a href="#">Conocenos</a></li>
-                    <li><a href="#">Cerrar Sesión</a></li>
+                    <li><a href="../index.html">Cerrar Sesión</a></li>
                 </ul>
             </nav>
 
@@ -32,33 +31,32 @@
     </div>
 
     <div class="bienvenida">
-        <h2>Hola NOMBRE ¿Qué te provoca hoy?</h2>
-        <img src="imagenes/hamburguesa.jpg" alt="Cargando Imagen">
+        <h2>Hola <span id="nombre-usuario">NOMBRE</span> ¿Qué te provoca hoy?</h2>
+        <img src="../img/hamburguesa.jpg" alt="Cargando Imagen">
         <button>Pedir Domicilio</button>
     </div>
 
     <div class="contenedor_cajitas">
         <div class="cajita" onclick="openModal('menuHamburguesas')">
-            <img src="imagenes/1.png" alt="Menú de Hamburguesas">
+            <img src="../img/1.png" alt="Menú de Hamburguesas">
         </div>
         <div class="cajita" onclick="openModal('menuPerros')">
-            <img src="imagenes/2.png" alt="Menú de Perros">
+            <img src="../img/2.png" alt="Menú de Perros">
         </div>
         <div class="cajita" onclick="openModal('menuChuzos')">
-            <img src="imagenes/3.png" alt="Menú de Chuzos">
+            <img src="../img/3.png" alt="Menú de Chuzos">
         </div>
     </div>
     
     <div class="contenedor_cajitas2">
         <div class="cajita" onclick="openModal('menuSanduches')">
-            <img src="imagenes/4.png" alt="Menú de Sánduches">
+            <img src="../img/4.png" alt="Menú de Sánduches">
         </div>
         <div class="cajita" onclick="openModal('menuBebidas')">
-            <img src="imagenes/5.png" alt="Menú de Bebidas">
+            <img src="../img/5.png" alt="Menú de Bebidas">
         </div>
     </div>
     
-    <!-- Modal -->
     <div id="menuModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
@@ -66,11 +64,12 @@
         </div>
     </div>
     
+    
 
     <footer>
         <div class="footer_container">
             <div class="logo-section">
-                <img src="imagenes/logo_redes_sin.png" alt="Logo Donde Rafa">
+                <img src="../img/logo_redes_sin.png" alt="Logo Donde Rafa">
                 <p>Ya viste nuestro menú ¿Qué quieres pedir hoy? Pide tu domicilio en nuestro WhatsApp</p>
             </div>
 
@@ -104,14 +103,15 @@
                     <p>📞 317 341 2847</p>
                     <p>📞 318 468 2076</p>
                     <div class="social-icons">
-                        <img src="imagenes/facebook.png" alt="Facebook">
-                        <img src="imagenes/instagram.png" alt="Instagram">
+                        <img src="../img/facebook.png" alt="Facebook">
+                        <img src="../img/instagram.png" alt="Instagram">
                     </div>
                 </div>
             </div>
     </footer>
 
-    <script src="js/principal.js"></script>
+    <script src="../js/principal.js"></script>
+    <script src="../js/mostrarName.js"></script>
 </body>
 
 </html>

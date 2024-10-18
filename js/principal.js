@@ -1,53 +1,41 @@
-// Información ficticia de los menús
+// Información real de los menús (extraída de la imagen)
 const menus = {
     menuHamburguesas: `
         <h2>Menú de Hamburguesas</h2>
-        <p>Incluye:</p>
         <ul>
-            <li>Hamburguesa Clásica</li>
-            <li>Hamburguesa BBQ</li>
-            <li>Hamburguesa con Doble Queso</li>
-            <li>Hamburguesa Vegana</li>
+            <li><strong>Sencilla</strong> - 11K<br>Carne de res, vegetales, queso y salsas.</li>
+            <li><strong>Con Tocinetas</strong> - 15K<br>Carne de res, tocineta ahumada, vegetales, queso y salsas.</li>
+            <li><strong>Mixta</strong> - 17K<br>Carne de res, vegetales, queso, chorizo o pollo.</li>
+            <li><strong>Full</strong> - 27K<br>Carne de res, pollo, chorizo, tocineta, vegetales, queso y salsas.</li>
         </ul>
     `,
     menuPerros: `
         <h2>Menú de Perros</h2>
-        <p>Incluye:</p>
         <ul>
-            <li>Perro Sencillo</li>
-            <li>Perro con Queso</li>
-            <li>Perro Especial</li>
-            <li>Perro con Tocino</li>
+            <li><strong>Perro</strong> - 11K<br>Salchicha, queso, ripio de papa, ensalada de la casa y salsas.</li>
+            <li><strong>Perra</strong> - 15K<br>Salchicha ranchera, tocineta, ripio de papa, queso, ensalada de la casa y salsas.</li>
+            <li><strong>Choriperro</strong> - 15K<br>Chorizo de puro solomito con chicharrón, ensalada de la casa, queso, ripio de papa y salsas.</li>
         </ul>
     `,
     menuChuzos: `
         <h2>Menú de Chuzos</h2>
-        <p>Incluye:</p>
         <ul>
-            <li>Chuzo de Res</li>
-            <li>Chuzo de Pollo</li>
-            <li>Chuzo Mixto</li>
-            <li>Chuzo Vegano</li>
+            <li><strong>Pollo</strong> - 6K<br>Chuzito de pollo con tocineta acompañado con arepa.</li>
+            <li><strong>Chorizo</strong> - 6K<br>Chorizo de puro solomito con chicharrón acompañado con arepa.</li>
+            <li><strong>Chuzo Especial</strong> - 15K<br>Chuzito de pollo 250g acompañado de ensalada de la casa y doble arepa.</li>
         </ul>
     `,
     menuSanduches: `
         <h2>Menú de Sánduches</h2>
-        <p>Incluye:</p>
         <ul>
-            <li>Sánduche Clásico</li>
-            <li>Sánduche de Pollo</li>
-            <li>Sánduche Vegetariano</li>
-            <li>Sánduche con Queso</li>
+            <li><strong>Sanduche</strong> - 15K<br>Pan fresco de orégano, parmesano o cilantro, ajo, filete de pollo, tocineta, queso, vegetales, ensalada de la casa y salsa de la casa.</li>
+            <li><strong>Butifarras</strong> - 1K<br>Deliciosas butifarras con salsa.</li>
         </ul>
     `,
     menuBebidas: `
         <h2>Menú de Bebidas</h2>
-        <p>Incluye:</p>
-        <ul type="none">
-            <li>Agua</li>
-            <li>Gaseosa</li>
-            <li>Jugo Natural</li>
-            <li>Limonada</li>
+        <ul>
+            <li><strong>Gaseosa</strong> - 3K<br>250 ml</li>
         </ul>
     `
 };
