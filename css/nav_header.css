@@ -18,10 +18,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
 }
 
 nav ul {
     display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
@@ -32,20 +37,16 @@ nav ul li a {
     text-decoration: none;
     color: black;
     padding: 10px;
+    transition: background-color 0.3s ease; /* Transición suave para el hover */
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     background-color: #d2ceff;
     border-radius: 3px;
 }
 
 .ubicacion h2 {
     margin-right: 30px;
-}
-
-.ubicacion h2 {
-    display: flex;
-    align-items: center;
     font-size: 1.5rem;
 }
 
@@ -69,7 +70,8 @@ nav ul li a:hover{
     z-index: 1;
 }
 
-.bienvenida h2, .bienvenida button {
+.bienvenida h2,
+.bienvenida button {
     position: absolute;
     z-index: 2;
     color: white;
@@ -80,9 +82,11 @@ nav ul li a:hover{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 45px;
+    text-align: center;
 }
 
 .bienvenida button {
+    cursor: pointer;
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -92,4 +96,40 @@ nav ul li a:hover{
     color: white;
     border: 2px solid white;
     border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
+
+.bienvenida button:hover {
+    background-color: #a50f0f; /* Cambiar color al pasar el mouse */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .bienvenida h2 {
+        font-size: 35px;
+    }
+
+    .bienvenida button {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    nav ul li {
+        margin-right: 5px; /* Reducir margen en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .bienvenida h2 {
+        font-size: 28px;
+    }
+
+    .bienvenida button {
+        font-size: 16px;
+        padding: 6px;
+    }
+
+    nav ul li a {
+        padding: 8px; /* Ajustar padding en enlaces */
+    }
 }

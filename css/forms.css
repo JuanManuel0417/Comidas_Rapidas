@@ -9,6 +9,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    min-height: 100vh; /* Asegura que el body ocupe al menos toda la altura de la ventana */
 }
 
 .contenedor {
@@ -19,6 +20,7 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     position: absolute;
     top: 10%;
+    max-width: 90%; /* Asegura que el contenedor no exceda el 90% del ancho de la pantalla */
 }
 
 h2 {
@@ -31,12 +33,14 @@ label {
     margin-bottom: 5px;
 }
 
-form input, form select{
+form input,
+form select {
     width: 100%;
     padding: 8px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    font-size: 16px; /* Aumenta el tamaño de la fuente para mayor comodidad */
 }
 
 button {
@@ -47,6 +51,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px; /* Asegura un tamaño de texto legible */
 }
 
 button:hover {
@@ -66,4 +71,57 @@ button:hover {
 
 .oculto {
     display: none;
+}
+
+/* Media Queries para dispositivos móviles (768px y menores) */
+@media (max-width: 768px) {
+    .contenedor {
+        width: 80%; /* Aumentar el ancho del contenedor en pantallas pequeñas */
+        padding: 20px; /* Ajustar el padding */
+    }
+
+    h2 {
+        font-size: 20px; /* Ajustar tamaño del texto */
+    }
+
+    form input,
+    form select {
+        padding: 10px; /* Hacer los inputs más cómodos */
+        font-size: 16px; /* Aumentar tamaño de fuente */
+    }
+
+    button {
+        padding: 12px; /* Aumentar tamaño del botón */
+    }
+
+    .enlace {
+        font-size: 16px; /* Ajustar tamaño del texto en enlace */
+    }
+}
+
+/* Media Queries para pantallas muy pequeñas (480px y menores) */
+@media (max-width: 480px) {
+    .contenedor {
+        width: 90%; /* Aumentar más el ancho en pantallas móviles */
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    form input,
+    form select {
+        padding: 8px;
+        font-size: 14px; /* Ajustar tamaño de la fuente */
+    }
+
+    button {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .enlace {
+        font-size: 14px;
+    }
 }
